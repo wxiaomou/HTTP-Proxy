@@ -1,0 +1,21 @@
+================================================================
+
+HTTP Proxy
+Author: Xiaomou Wang
+ 
+================================================================
+
+DESCRIBE:
+First, Setting configuration of firefox:
+	   1, Select Tools->Options (or Edit->Preferences) from the menu. (for MACOS: Select Firefox->Preferences)
+	   2, Click on the 'Advanced' icon in the Options dialog.
+	   3, Select the 'Network' tab, and click on 'Settings' in the 'Connections' area.
+	   4, Select 'Manual Proxy Configuration' from the options available. In the boxes, enter the hostname and port where proxy program is running.
+Second, Configuring Firefox to use HTTP/1.0
+	   1, Type 'about:config' in the title bar.
+	   2, In the search/filter bar, type 'network.http.proxy'
+	   3, You should see three keys: network.http.proxy.keepalive, network.http.proxy.pipelining, and network.http.proxy.version.
+	   4, Set keepalive to false. Set version to 1.0. Make sure that pipelining is set to false.ions'.
+Third, compile the program using make and run the proxy first by type ./proxy portNumber to run the proxy then open the firefox
+
+
